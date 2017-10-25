@@ -4,7 +4,7 @@
 
 >The course in [Computer School 'Hillel'](https://itschool-hillel.org "Hillel") started on 13th October, 2017. And it consists of 30 lessons of 2 per week.
 
-Teacher is **Saveliy Sychov.**
+The teacher is **Saveliy Sychov.**
 ***
 
 ## My workplace: ##
