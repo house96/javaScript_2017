@@ -6,7 +6,6 @@ function fillingArray(arr, m) {
       arr[i][j] = Math.floor(Math.random()*50);
     }
   }
-  
 console.log(arr);
 }
 
