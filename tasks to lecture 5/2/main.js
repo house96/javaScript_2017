@@ -16,7 +16,7 @@ function doMath(x, znak, y) {
   }
   if (znak == '^') {
     var result = 1;
-    for(var i = 0; i < y; i++){
+    for (var i = 0; i < y; i++) {
       result *= x;
     }
     return result;
@@ -28,11 +28,11 @@ function doMath(x, znak, y) {
   }
 }
 
-function fact(n){
+function fact(n) {
   var res = 1;
-  for(var i = 1; i <=n; i++){
-   res *= i;
+  for (var i = 1; i <= n; i++) {
+    res *= i;
   }
   console.log(res);
 }
-  console.log(doMath(5, '!', 2));
+console.log(doMath(5, '+', 2));
