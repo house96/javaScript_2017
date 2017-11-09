@@ -17,7 +17,7 @@ function sequence(x, y) {
 function increment(start, step) {
 
   console.log(start += step);
-  return start += step;
+  return start;
 
 }
 
