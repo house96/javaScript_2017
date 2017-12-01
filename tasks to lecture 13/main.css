@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  
+}
+
+.block {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  height: 20px;
+  width: 20px;
+}
+
+input::before {
+  content: " ";
+  display: block;
+  height: 16px;
+  width: 16px;
+  border-radius: 5px;
+}
+
+.input-red::before {
+  border: 2px solid red;
+}
+
+.input-blue::before {
+  border: 2px solid blue;
+}
+
+.btn {
+  margin-top: 15px;
+}
