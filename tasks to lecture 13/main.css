@@ -2,7 +2,6 @@ html, body {
   height: 100%;
   width: 100%;
   display: flex;
-  
 }
 
 .block {
@@ -12,6 +11,8 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  border-radius: 3px;
 }
 
 .input {
@@ -37,4 +38,6 @@ input::before {
 
 .btn {
   margin-top: 15px;
+  width: 70px;
+  cursor: pointer;
 }
