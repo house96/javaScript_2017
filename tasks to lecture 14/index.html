@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+
+  <div class="block"></div>
+
+
+  <style>
+    body {
+      background-color: grey;
+    }
+
+    .block {
+      width: 150px;
+      height: 150px;
+      position: fixed;
+      top: 50px;
+      left: 50px;
+      background: gold;
+      border-radius: 70% 100% / 30% 100%;
+      transform: rotateZ(100deg);
+      cursor: pointer;
+    }
+
+    .block:before,
+    .block:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 7px;
+      top: -6px;
+      background: yellowgreen;
+      border-radius: 0 100%;
+      box-shadow: 0 0 5px rgba(100, 100, 100, .3);
+    }
+
+    .block:before {
+      top: 18px;
+      left: -2px;
+    }
+
+    .block:after {
+      transform: rotateZ(-40deg);
+    }
+
+  </style>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

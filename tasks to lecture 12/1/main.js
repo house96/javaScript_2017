@@ -12,6 +12,6 @@
 
   setInterval(function color() {
     var fill = '#' + (Math.floor(Math.random() * 1000000))
-    return block.style.backgroundColor = fill;
+     block.style.backgroundColor = fill;
   }, 500);
 })();
