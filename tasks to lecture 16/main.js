@@ -5,10 +5,10 @@ window.onload = function () {
   var view = document.querySelector('#view');
 
   for (var i = 0; i < control.length; i++) {
-    control[i].addEventListener('click', function(){
+    control[i].addEventListener('click', function () {
 
-     var key = event.target.dataset.index;
-      if(sum[key] == undefined) {
+      var key = event.target.dataset.index;
+      if (sum[key] == undefined) {
         sum[key] = 0;
       }
 
@@ -17,22 +17,35 @@ window.onload = function () {
       render()
     })
   }
+
   function render() {
     var str = "";
     for (item in sum) {
-      str += item +' : ' + sum[item] + '   <button class="remove" data-index ="'+item+'">-</button>' +'<hr>'
-      
+      str += '<p>' + item + ' : ' + sum[item] + ' <button class="remove"' + 'data-attr="' + item + '"' + '>-</button>' + '</p>' + '<hr>';
     }
     view.innerHTML = str;
+    console.log(item);
+    remove();
   }
-  // var btn = document.querySelector('.remove');
-  // for(var j = 0; j < btn; j++){
-  //   btn[j].addEventListener('click', remove);
-  //   console.log(count);
-  // }
 
-  // function remove() {
-  //   var count = event.target.dataset.index;
-  //   console.log(count);
-  // }
+
+
+  function remove() {
+
+    var btn = document.querySelectorAll('.remove');
+    // console.log(item);
+    for (var i = 0; i < btn.length; i++) {
+      btn[i].addEventListener('click', function () {
+
+        var key = event.target.dataset.attr;
+        sum[key] -= 1;
+        if (sum[key] <= 0) {
+          delete sum[key];
+        }
+        render()
+      })
+    }
+  }
+
+
 }
