@@ -1,0 +1,157 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+     font-family: Roboto, sans-serif;
+     color: white;
+}
+
+.container {
+     height: 100vh;
+     min-width: 100%;
+     padding: 1rem;
+}
+
+.subscribe {
+     background: #323a45;
+     padding: 2rem;
+}
+
+.grid {
+     display: flex;
+     flex-flow: row wrap;
+}
+
+.grid--gutter-small {
+     margin-left: -1rem;
+}
+
+.grid__item {
+     flex: 1 0 auto;
+     padding-left: 1rem;
+     padding-bottom: 1rem;
+     width: 200px; 
+}
+
+@supports (display: grid) {
+     .grid {
+          display: grid;
+     }
+     
+     .grid__item {
+          padding: initial;
+          min-height: 100px;
+     }
+     
+     .grid--gutter-small {
+          margin: initial;
+     }
+}
+
+.grid--gutter-small {
+     grid-gap: 1rem;
+}
+
+.grid--auto-sizing {
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   
+}
+
+.heading {
+     font-size: 1.5rem;
+     font-weight: 700;
+     letter-spacing: 0.1rem;
+     margin-bottom: 1rem;
+     text-align: center;
+     text-transform: uppercase;
+}
+.img {
+  max-width: 100%;
+}
+
+.title {
+  text-align: center;
+  
+}
+
+.cost {
+  text-align: center;
+  color: darkorange;
+  margin: 20px auto;
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+.subscribe {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe::before{
+  content: "%";
+  width: 100px;
+  background: #e43;
+  position: absolute;
+  top: 0;
+  right: -35px;
+  left: auto;
+  text-align: center;
+  line-height: 40px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
+}
+.content::before {
+  content: "%";
+  width: 50px;
+  background: #e43;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  left: auto;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
+}
+.btn {
+  background-color:#7892c2;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	padding:10px 22px;
+  text-decoration:none;
+  font-size: 17px;
+  color: #fff;
+  outline: none;
+}
+.btn:hover {
+	background-color:#476e9e;
+}
+.btn:active {
+	position:relative;
+	top: 1px;
+}
+.btn-buy, .btn-buy:hover {
+  background-color: #379b5e;
+}
+.btn-reset, .btn-reset:hover {
+  background-color: #ce3129;
+}
+ .basket {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+   width: 300px;
+   min-height: 150px;
+   color: #323a45;
+   background-color: #fff;
+ }   
+ .isHiden {
+display: none;
+ }
+

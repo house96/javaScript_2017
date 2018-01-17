@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>STORE &reg;</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script src="index.js">
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="subscribe">
+
+      <h2 class="heading">MOBILE STORE</h2>
+      <div class="grid grid--gutter-small grid--auto-sizing">
+
+      </div>
+
+    </div>
+    <div class="basket isHiden">
+      <h4 class="title">Basket</h4>
+
+      <p class="row cost">The final cost is $
+        <span class="basket__cost">
+        </span>
+      </p>
+      <div class="mobile">
+
+      </div>
+      <button type="submit" class="btn btn-buy">buy</button>
+      <button type="reset" class="btn btn-reset">reset</button>
+    </div>
+  </div>
+  <template id="template_string">
+    <p class="row">&#10004;
+      <span class="mobile__name"></span> X
+      <span class="mobile__count"></span>
+    </p>
+  </template>
+  <template id="template">
+    <div class="grid  grid__item">
+      <h4 class="title"></h4>
+      <div class="content">
+        <img class="img" src="" alt="mobile">
+      </div>
+      <span class="cost"></span>
+      <div class="description">
+      </div>
+      <button type="button" class="btn add">add</button>
+    </div>
+  </template>
+</body>
+
+</html>
